@@ -1,14 +1,27 @@
+# Open Neural Network Exchange, PyTorch, Caffe2 #
+
+The Open Neural Network Exchange (ONNX) is an open source Artificial Intelligence (AI) ecosystem/open standard for Machine Learning (ML) interoperability.
+
+*Source: https://onnx.ai*
 
 
-## Caffe ##
-Convolutional Architecture for Fast Feature Embedding (CAFFE OR Caffe) is an open-source deep learning framework (BSD License), which supports various deep learning architectures. Caffe2 builds upon Caffe.
 
 
-DL -> Caffe (deep learning and machine learning framework) -> CUDA.
 
-Source: https://caffe.berkeleyvision.org/installation.html
+PyTorch is an open source ML framework based upon Torch (a scientific computing framework that supports GPU-based ML algorithms). 
 
-Source: https://developer.nvidia.com/blog/caffe2-deep-learning-framework-facebook/
+*Source: http://torch.ch*
+
+Convolutional Architecture for Fast Feature Embedding (CAFFE OR Caffe) is an open source ML and Deep Learning (DL) framework, which supports various DL architectures. Caffe2 builds upon Caffe (a.k.a. Caffe1).
+
+*Source: https://developer.nvidia.com/blog/caffe2-deep-learning-framework-facebook/*
+
+Depending upon the Operating Systems (OS) desired (e.g., Redhat, Ubuntu, etc.), Caffe/Caffe2 has various prerequisites/dependencies (e.g., https://caffe.berkeleyvision.org/installation.html). For the experimentation herein, Ubuntu (a Linux-based OS based upon the Debian family of Linux) was utilized.
+
+
+
+
+
 
 When updating Caffe, it’s best to make clean before re-compiling.
 
