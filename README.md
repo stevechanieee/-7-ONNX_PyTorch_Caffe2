@@ -23,6 +23,34 @@ Depending upon the Operating Systems (OS) desired (e.g., Redhat, Ubuntu, etc.), 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Value mismatch after convert models from PyTorch to ONNX
+
+*Source: https://github.com/pytorch/pytorch/issues/34731*
+
+
+
+
 When updating Caffe, it’s best to make clean before re-compiling.
 
 Caffe has several dependencies:
