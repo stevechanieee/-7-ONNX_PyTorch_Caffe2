@@ -4,10 +4,6 @@ The Open Neural Network Exchange (ONNX) is an open source Artificial Intelligenc
 
 *Source: https://onnx.ai*
 
-
-
-
-
 PyTorch is an open source ML framework based upon Torch (a scientific computing framework that supports GPU-based ML algorithms). 
 
 *Source: http://torch.ch*
@@ -17,6 +13,29 @@ Convolutional Architecture for Fast Feature Embedding (CAFFE OR Caffe) is an ope
 *Source: https://developer.nvidia.com/blog/caffe2-deep-learning-framework-facebook/*
 
 Depending upon the Operating Systems (OS) desired (e.g., Redhat, Ubuntu, etc.), Caffe/Caffe2 has various prerequisites/dependencies (e.g., https://caffe.berkeleyvision.org/installation.html). For the experimentation herein, Ubuntu (a Linux-based OS based upon the Debian family of Linux) was utilized.
+Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture (CUDA), (2) Basic Linear Algebra Subprograms (BLAS), (3) Boost. Other optional dependencies include: (4) OpenCV, (5)
+
+* CUDA
+
+
+
+* BLAS (a specification, and de facto standard, for a set of low-level routines for performing basic vector and matrix operations [e.g., matrix multiplication]. etc.].The current LAPACK (a library of Fortran subroutines for solving the most commonly occurring problems in numerical linear algebra) version is v3.9.0.
+
+
+
+
+Please note that the work is "based upon work supported by the National Science Foundation under Grant No. ASC-9313958 and DOE Grant No. DE-FG03-94ER25219." 
+
+*Source: http://www.netlib.org/blas/*
+
+* Boost (pre-bundled libraries that work well with the C++ Standard Library). The current version is v1.75.0.
+
+*Source: https://www.boost.org*
+
+* OpenCV (an ML and computer vision library of programming functions). The current version is v4.5.1.
+
+*Source: https://opencv.org/about/*
+*Source: https://opencv.org/releases/*
 
 
 
@@ -27,14 +46,7 @@ Depending upon the Operating Systems (OS) desired (e.g., Redhat, Ubuntu, etc.), 
 
 
 
-
-
-
-
-
-
-
-
+Basic Linear Algebra Subprograms (BLAS) is a specification that prescribes a set of low-level routines for performing common linear algebra operations such as vector addition, scalar multiplication, dot products, linear combinations, and matrix multiplication. They are the de facto standard low-level routines for linear algebra libraries; the routines have bindings for both C ("CBLAS interface") and Fortran ("BLAS interface"). Although the BLAS specification is general, BLAS implementations are often optimized for speed on a particular machine, so using them can bring substantial performance benefits. BLAS implementations will take advantage of special floating point hardware such as vector registers or SIMD instructions.
 
 
 
