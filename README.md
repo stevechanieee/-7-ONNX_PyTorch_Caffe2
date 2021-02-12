@@ -13,16 +13,15 @@ Convolutional Architecture for Fast Feature Embedding (CAFFE OR Caffe) is an ope
 *Source: https://developer.nvidia.com/blog/caffe2-deep-learning-framework-facebook/*
 
 Depending upon the Operating Systems (OS) desired (e.g., Redhat, Ubuntu, etc.), Caffe/Caffe2 has various prerequisites/dependencies (e.g., https://caffe.berkeleyvision.org/installation.html). For the experimentation herein, Ubuntu (a Linux-based OS based upon the Debian family of Linux) was utilized.
-Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture (CUDA), (2) Basic Linear Algebra Subprograms (BLAS), (3) Boost. Other optional dependencies include: (4) OpenCV, (5)
+Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture (CUDA), (2) Basic Linear Algebra Subprograms (BLAS), (3) Boost. Other optional dependencies include: (4) OpenCV, (5) IO Libraries, and (6)cuDNN.
 
 * CUDA
 
 
 
-* BLAS (a specification, and de facto standard, for a set of low-level routines for performing basic vector and matrix operations [e.g., matrix multiplication]). Please note that the work is "based upon work supported by the National Science Foundation under Grant No. ASC-9313958 and DOE Grant No. DE-FG03-94ER25219." 
-The current LAPACK (a library of Fortran subroutines for solving the most commonly occurring problems in numerical linear algebra) development version is v3.9.0. The current release version is v3.8.0.
+* BLAS (a specification, and de facto standard, for a set of low-level routines for performing basic vector and matrix operations [e.g., matrix multiplication]). Please note that the work is "based upon work supported by the National Science Foundation under Grant No. ASC-9313958 and DOE Grant No. DE-FG03-94ER25219." It is available at Netlib, which is a scientific computing software repository maintained by AT&T, Bell Laboratories, Oak Ridge National Laboratory, and University of Tennessee. The current standard BLAS library and LAPACK (a library of Fortran subroutines for solving the most commonly occurring problems in numerical linear algebra) development version is v3.9.0. The current release version is v3.8.0.
 
-*Source: http://www.netlib.org/blas/*
+*Source: http://www.netlib.org/blas/*<br/>
 *Source: http://www.netlib.org/blas/#_git_access*<br/>
 *Source: https://github.com/Reference-LAPACK*<br/>
 *Source: https://github.com/Reference-LAPACK/lapack*<br/>
@@ -37,20 +36,20 @@ The current LAPACK (a library of Fortran subroutines for solving the most common
 *Source: https://opencv.org/about/*
 *Source: https://opencv.org/releases/*
 
+IO Libraries, such as LevelDB (open-source on-disk key-value store) and LMDB
 
+NVIDIA CUDA Deep Neural Network (cuDNN) library (a GPU-accelerated library for deep neural networks).
 
+**Automatically Tuned Linear Algebra Software (ATLAS)** is an open source implementation of BLAS and LAPACK Application Programming Interfaces (APIs) for C and Fortran77. It tunes itself to the involved machine when compiled and automatically generates an optimized BLAS library. 
 
+The Lab of Parallel Software and Computational Science of the Institute of Software, Chinese Academy of Sciences (ISCAS) developed **OpenBLAS**, which is an open source implementation of BLAS and LAPACK APIs with various optimizations for specific processor types. 
 
+Intel Corporation developed **Math Kernel Library (MKL)**, which is a commercial implementation of, among other functions (e.g., sparse solvers, Fast Fourier Transforms), BLAS and LAPACK. 
 
+When ATLAS, OpenBLAS, and MKL were tested on Revolution R Open (RRO), which is the enhanced open source distribution of R from Revolution Analytics that is geared for statistical analysis and data science, it was found that there is approximately a 60% improvement over the standard BLAS library and LAPACK when using ATLAS or OpenBLAS and a 70% improvement over the standard BLAS library and LAPACK when using MKL.
 
-
-
-
-Basic Linear Algebra Subprograms (BLAS) is a specification that prescribes a set of low-level routines for performing common linear algebra operations such as vector addition, scalar multiplication, dot products, linear combinations, and matrix multiplication. They are the de facto standard low-level routines for linear algebra libraries; the routines have bindings for both C ("CBLAS interface") and Fortran ("BLAS interface"). Although the BLAS specification is general, BLAS implementations are often optimized for speed on a particular machine, so using them can bring substantial performance benefits. BLAS implementations will take advantage of special floating point hardware such as vector registers or SIMD instructions.
-
-
-
-
+*Source: https://mran.microsoft.com/archives/rro-8.0.1*<br/>
+*Source: http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/*br/>
 
 
 
@@ -61,13 +60,7 @@ Value mismatch after convert models from PyTorch to ONNX
 *Source: https://github.com/pytorch/pytorch/issues/34731*
 
 
-
-
-When updating Caffe, it’s best to make clean before re-compiling.
-
-Caffe has several dependencies:
-
-CUDA is required for GPU mode. BLAS via ATLAS, MKL, or OpenBLAS; Caffe requires BLAS as the backend of its matrix and vector computations. There are several implementations of this library. The choice is yours: Boost >= 1.55 protobuf, glog, gflags, hdf5
+Boost >= 1.55 protobuf, glog, gflags, hdf5
 
 Other dependencies:
 
