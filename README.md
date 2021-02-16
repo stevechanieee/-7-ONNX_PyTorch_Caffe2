@@ -33,8 +33,8 @@ Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture 
 
 * OpenCV (an ML and computer vision library of programming functions). The current version is v4.5.1.
 
-*Source: https://opencv.org/about/*
-*Source: https://opencv.org/releases/*
+*Source: https://opencv.org/about/*<br/>
+*Source: https://opencv.org/releases/*<br/>
 
 * Input/Output (IO) Libraries include LevelDB (key-value store storage library) and Lightning Memory-Mapped Database (LMDB)(key-value storage library).
 
