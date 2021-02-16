@@ -71,10 +71,19 @@ Caffe can be accelerated by a drop-in integration of NVIDIA cuDNN (i.e., cuDNN C
 install cuDNN 
 uncomment the USE_CUDNN := 1 flag in Makefile.config when installing Caffe. 
 ```
-The current tested version is cuDNN v6. It has been reported that Caffe does not well support cDNN v8.
+The current tested version is cuDNN v6. It has been reported that Caffe does not well support cuDNN v8. The workaround for certain versions of CUDA (e.g., CUDA v10.2) with cuDNN v8.0 is to bypass Caffe and use Openpose.
 
 *Source: https://forums.developer.nvidia.com/t/cudnn-found-but-version-cant-be-deduced/145551/3*
 
 For further reference please see: https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 
+Within Openpose, find:
 
+```javascript
+file(READ {CUDNN_INCLUDE}/cudnn.h CUDNN_VERSION_FILE_CONTENTS) 
+```
+and change it to:
+
+```javascript
+file(READ {CUDNN_INCLUDE}/cudnn_version.h CUDNN_VERSION_FILE_CONTENTS)
+```
