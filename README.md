@@ -15,7 +15,7 @@ Convolutional Architecture for Fast Feature Embedding (CAFFE OR Caffe) is an ope
 Depending upon the Operating Systems (OS) desired (e.g., Redhat, Ubuntu, etc.), Caffe/Caffe2 has various prerequisites/dependencies (e.g., https://caffe.berkeleyvision.org/installation.html). For the experimentation herein, Ubuntu (a Linux-based OS based upon the Debian family of Linux) was utilized.
 Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture (CUDA), (2) Basic Linear Algebra Subprograms (BLAS), (3) Boost. Other optional dependencies include: (4) OpenCV, (5) IO Libraries, and (6)cuDNN.
 
-* CUDA
+* CUDA (a parallel computing platform and programming model for computing on Graphical Processing Units [GPUs]).
 
 
 
