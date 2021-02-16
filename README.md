@@ -26,30 +26,32 @@ Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture 
   * *Source: https://github.com/Reference-LAPACK*<br/>
   * *Source: https://github.com/Reference-LAPACK/lapack*<br/>
   * *Source: https://github.com/Reference-LAPACK/lapack-release*<br/>
+  
+    * **Automatically Tuned Linear Algebra Software (ATLAS)** is an open source implementation of BLAS and LAPACK Application Programming Interfaces (APIs) for C and Fortran77. It tunes itself to the involved machine when compiled and automatically generates an optimized BLAS library. 
+
+    * The Lab of Parallel Software and Computational Science of the Institute of Software, Chinese Academy of Sciences (ISCAS) developed **OpenBLAS**, which is an open source implementation of BLAS and LAPACK APIs with various optimizations for specific processor types. 
+
+    * Intel Corporation developed **Math Kernel Library (MKL)**, which is a commercial implementation of, among other functions (e.g., sparse solvers, Fast Fourier Transforms), BLAS and LAPACK. 
+
+    * When ATLAS, OpenBLAS, and MKL were tested on Revolution R Open (RRO), which is the enhanced open source distribution of R from Revolution Analytics that is geared for statistical analysis and data science, it was found that there is approximately a 60% improvement over the standard BLAS library and LAPACK when using ATLAS or OpenBLAS and a 70% improvement over the standard BLAS library and LAPACK when using MKL.
+
+    * *Source: https://mran.microsoft.com/archives/rro-8.0.1*<br/>
+    * *Source: http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/*<br/>
 
 * Boost (pre-bundled libraries that work well with the C++ Standard Library). The current version is v1.75.0.
 
-*Source: https://www.boost.org*
+  * *Source: https://www.boost.org*
 
 * OpenCV (an ML and computer vision library of programming functions). The current version is v4.5.1.
 
-*Source: https://opencv.org/about/*<br/>
-*Source: https://opencv.org/releases/*<br/>
+  * *Source: https://opencv.org/about/*<br/>
+  * *Source: https://opencv.org/releases/*<br/>
 
 * Input/Output (IO) Libraries include LevelDB (key-value store storage library) and Lightning Memory-Mapped Database (LMDB)(key-value storage library).
 
 * NVIDIA CUDA Deep Neural Network (cuDNN) library (a GPU-accelerated library for deep neural networks).
 
-**Automatically Tuned Linear Algebra Software (ATLAS)** is an open source implementation of BLAS and LAPACK Application Programming Interfaces (APIs) for C and Fortran77. It tunes itself to the involved machine when compiled and automatically generates an optimized BLAS library. 
 
-The Lab of Parallel Software and Computational Science of the Institute of Software, Chinese Academy of Sciences (ISCAS) developed **OpenBLAS**, which is an open source implementation of BLAS and LAPACK APIs with various optimizations for specific processor types. 
-
-Intel Corporation developed **Math Kernel Library (MKL)**, which is a commercial implementation of, among other functions (e.g., sparse solvers, Fast Fourier Transforms), BLAS and LAPACK. 
-
-When ATLAS, OpenBLAS, and MKL were tested on Revolution R Open (RRO), which is the enhanced open source distribution of R from Revolution Analytics that is geared for statistical analysis and data science, it was found that there is approximately a 60% improvement over the standard BLAS library and LAPACK when using ATLAS or OpenBLAS and a 70% improvement over the standard BLAS library and LAPACK when using MKL.
-
-*Source: https://mran.microsoft.com/archives/rro-8.0.1*<br/>
-*Source: http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/*<br/>
 
 
 
