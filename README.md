@@ -67,9 +67,14 @@ ONNX was designed to be an open standard for ML interoperability. Among other ex
 Caffe can be accelerated by a drop-in integration of NVIDIA cuDNN (i.e., cuDNN Caffe). This acceleration will result in faster operations for the involved Caffe models.
 
 
+```javascript
+install cuDNN 
+uncomment the USE_CUDNN := 1 flag in Makefile.config when installing Caffe. 
+```
+The current tested version is cuDNN v6. It has been reported that Caffe does not well support cDNN v8.
+
+*Source: https://forums.developer.nvidia.com/t/cudnn-found-but-version-cant-be-deduced/145551/3*
+
+For further reference please see: https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 
 
-
-
-
-: for fastest operationTo speed up your Caffe models, install cuDNN then uncomment the USE_CUDNN := 1 flag in Makefile.config when installing Caffe. Acceleration is automatic. The current version is cuDNN v6;
