@@ -51,6 +51,20 @@ Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture 
 
 * NVIDIA CUDA Deep Neural Network (cuDNN) library (a GPU-accelerated library for deep neural networks).
 
+## ONNX ##
+
+ONNX was designed to be an open standard for ML interoperability. Among other examples, PyTorch and Caffe1/Caffe2 could be made interoperable, as there were numerous compatibility issues. However, this is not straightforward, as conversion from, let us say, PyTorch to ONNX may be confronted by issue (e.g., value mismatch).
+
+*Source: https://github.com/pytorch/pytorch/issues/34731*
+
+## PyTorch ##
+
+
+
+
+## Caffe1/Caffe2 ##
+
+Caffe can be accelerated by a drop-in integration of NVIDIA cuDNN (i.e., cuDNN Caffe). This acceleration will result in faster operations for the involved Caffe models.
 
 
 
@@ -58,3 +72,4 @@ Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture 
 
 
 
+: for fastest operationTo speed up your Caffe models, install cuDNN then uncomment the USE_CUDNN := 1 flag in Makefile.config when installing Caffe. Acceleration is automatic. The current version is cuDNN v6;
