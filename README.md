@@ -64,6 +64,14 @@ ONNX was designed to be an open standard for ML interoperability. Among other ex
 
 ## Caffe1/Caffe2 ##
 
+Caffe requires, among other items: (1) Nvidia CUDA Compiler (NVCC), and (2) CUDA driver.
+
+
+
+
+
+*Source: https://leimao.github.io/blog/CUDA-Driver-VS-CUDA-Runtime/*
+
 Caffe can be accelerated by a drop-in integration of NVIDIA cuDNN (i.e., cuDNN Caffe). This acceleration will result in faster operations for the involved Caffe models.
 
 
