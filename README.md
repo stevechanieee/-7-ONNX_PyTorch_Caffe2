@@ -19,7 +19,7 @@ Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture 
 
 
 
-* BLAS (a specification, and de facto standard, for a set of low-level routines for performing basic vector and matrix operations [e.g., matrix multiplication]). Please note that the work is "based upon work supported by the National Science Foundation under Grant No. ASC-9313958 and DOE Grant No. DE-FG03-94ER25219." It is available at Netlib, which is a scientific computing software repository maintained by AT&T, Bell Laboratories, Oak Ridge National Laboratory, and University of Tennessee. The current standard BLAS library and LAPACK (a library of Fortran subroutines for solving the most commonly occurring problems in numerical linear algebra) development version is v3.9.0. The current release version is v3.8.0.
+* BLAS (a specification, and de facto standard, for a set of low-level routines for performing basic vector and matrix operations [e.g., matrix multiplication]). Please note that the work is "based upon work supported by the National Science Foundation under Grant No. ASC-9313958 and DOE Grant No. DE-FG03-94ER25219." It is available at Netlib (http://www.netlib.org/blas/), which is a scientific computing software repository maintained by AT&T, Bell Laboratories, Oak Ridge National Laboratory, and University of Tennessee. The current standard BLAS library and LAPACK (a library of Fortran subroutines for solving the most commonly occurring problems in numerical linear algebra) development version is v3.9.0. The current release version is v3.8.0.
 
 *Source: http://www.netlib.org/blas/*<br/>
 *Source: http://www.netlib.org/blas/#_git_access*<br/>
@@ -36,9 +36,9 @@ Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture 
 *Source: https://opencv.org/about/*
 *Source: https://opencv.org/releases/*
 
-IO Libraries, such as LevelDB (open-source on-disk key-value store) and LMDB
+* Input/Output (IO) Libraries include LevelDB (key-value store storage library) and Lightning Memory-Mapped Database (LMDB)(key-value storage library).
 
-NVIDIA CUDA Deep Neural Network (cuDNN) library (a GPU-accelerated library for deep neural networks).
+* NVIDIA CUDA Deep Neural Network (cuDNN) library (a GPU-accelerated library for deep neural networks).
 
 **Automatically Tuned Linear Algebra Software (ATLAS)** is an open source implementation of BLAS and LAPACK Application Programming Interfaces (APIs) for C and Fortran77. It tunes itself to the involved machine when compiled and automatically generates an optimized BLAS library. 
 
@@ -50,6 +50,11 @@ When ATLAS, OpenBLAS, and MKL were tested on Revolution R Open (RRO), which is t
 
 *Source: https://mran.microsoft.com/archives/rro-8.0.1*<br/>
 *Source: http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/*br/>
+
+
+
+
+
 
 
 
