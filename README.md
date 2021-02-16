@@ -21,11 +21,11 @@ Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture 
 
 * BLAS (a specification, and de facto standard, for a set of low-level routines for performing basic vector and matrix operations [e.g., matrix multiplication]). Please note that the work is "based upon work supported by the National Science Foundation under Grant No. ASC-9313958 and DOE Grant No. DE-FG03-94ER25219." It is available at Netlib (http://www.netlib.org/blas/), which is a scientific computing software repository maintained by AT&T, Bell Laboratories, Oak Ridge National Laboratory, and University of Tennessee. The current standard BLAS library and LAPACK (a library of Fortran subroutines for solving the most commonly occurring problems in numerical linear algebra) development version is v3.9.0. The current release version is v3.8.0.
 
-*Source: http://www.netlib.org/blas/*<br/>
-*Source: http://www.netlib.org/blas/#_git_access*<br/>
-*Source: https://github.com/Reference-LAPACK*<br/>
-*Source: https://github.com/Reference-LAPACK/lapack*<br/>
-*Source: https://github.com/Reference-LAPACK/lapack-release*<br/>
+  * *Source: http://www.netlib.org/blas/*<br/>
+  * *Source: http://www.netlib.org/blas/#_git_access*<br/>
+  * *Source: https://github.com/Reference-LAPACK*<br/>
+  * *Source: https://github.com/Reference-LAPACK/lapack*<br/>
+  * *Source: https://github.com/Reference-LAPACK/lapack-release*<br/>
 
 * Boost (pre-bundled libraries that work well with the C++ Standard Library). The current version is v1.75.0.
 
