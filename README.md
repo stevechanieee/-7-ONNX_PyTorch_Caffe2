@@ -1,4 +1,4 @@
-# Open Neural Network Exchange, PyTorch, Caffe2 #
+# Open Neural Network Exchange (ONNX), PyTorch, Caffe2 #
 
 The Open Neural Network Exchange (ONNX) is an open source Artificial Intelligence (AI) ecosystem/open standard for Machine Learning (ML) interoperability.
 
