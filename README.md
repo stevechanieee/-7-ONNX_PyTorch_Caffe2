@@ -87,3 +87,5 @@ and change it to:
 ```javascript
 file(READ {CUDNN_INCLUDE}/cudnn_version.h CUDNN_VERSION_FILE_CONTENTS)
 ```
+
+*Source: https://forums.developer.nvidia.com/t/cudnn-found-but-version-cant-be-deduced/145551*
