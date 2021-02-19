@@ -33,7 +33,7 @@ Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture 
 
     * Intel Corporation developed **Math Kernel Library (MKL)**, which is a commercial implementation of, among other functions (e.g., sparse solvers, Fast Fourier Transforms), BLAS and LAPACK. 
 
-    * When ATLAS, OpenBLAS, and MKL were tested on Revolution R Open (RRO), which is the enhanced open source distribution of R from Revolution Analytics that is geared for statistical analysis and data science, it was found that there is approximately a 60% improvement over the standard BLAS library and LAPACK when using ATLAS or OpenBLAS and a 70% improvement over the standard BLAS library and LAPACK when using MKL.
+    * When ATLAS, OpenBLAS, and MKL were tested on Revolution R Open (RRO), which is the enhanced open source distribution of R from Revolution Analytics that is geared for statistical analysis and data science, it was found that "there is approximately a 60% improvement over the standard BLAS library and LAPACK when using ATLAS or OpenBLAS and a 70% improvement over the standard BLAS library and LAPACK when using MKL."
 
     * *Source: https://mran.microsoft.com/archives/rro-8.0.1*<br/>
     * *Source: http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/*<br/>
