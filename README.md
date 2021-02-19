@@ -53,7 +53,7 @@ Taking Caffe, its dependencies include: (1) Compute Unified Device Architecture 
 
 ## ONNX ##
 
-ONNX was designed to be an open standard for ML interoperability. Among other examples, PyTorch and Caffe1/Caffe2 could be made interoperable, as there were numerous compatibility issues. However, this is not straightforward, as conversion from, let us say, PyTorch to ONNX may be confronted by issue (e.g., value mismatch).
+ONNX was designed to be an open standard for ML interoperability. Among other goals, it was envisioned that PyTorch and Caffe1/Caffe2 could be made interoperable, as there were numerous compatibility issues. However, this is not straightforward, as conversion from, let us say, PyTorch to ONNX may be confronted by issue (e.g., value mismatch).
 
 *Source: https://github.com/pytorch/pytorch/issues/34731*
 
