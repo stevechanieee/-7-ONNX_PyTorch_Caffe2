@@ -85,7 +85,7 @@ The current tested version is cuDNN v6. It has been reported that Caffe does not
 
 For further reference please see: https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
 
-Within Openpose, find:
+Within Openpose, proceed to find:
 
 ```javascript
 file(READ {CUDNN_INCLUDE}/cudnn.h CUDNN_VERSION_FILE_CONTENTS) 
